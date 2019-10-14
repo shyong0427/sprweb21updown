@@ -3,13 +3,13 @@ package pack.controller;
 import org.springframework.web.multipart.MultipartFile;
 
 public class UploadFile { // File 처리용 dto
-	private MultipartFile multipartFile;
+	private MultipartFile file;
 
-	public MultipartFile getMultipartFile() {
-		return multipartFile;
+	public MultipartFile getFile() {
+		return file;
 	}
 
-	public void setMultipartFile(MultipartFile multipartFile) {
-		this.multipartFile = multipartFile;
+	public void setFile(MultipartFile file) {
+		this.file = file;
 	}
 }

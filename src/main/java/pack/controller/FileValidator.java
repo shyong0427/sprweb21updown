@@ -15,7 +15,7 @@ public class FileValidator implements Validator { // 파일 유무 검사용
 	public void validate(Object target, Errors errors) {
 		UploadFile uploadFile = (UploadFile)target;
 		
-		if(uploadFile.getMultipartFile().getSize() == 0) {
+		if(uploadFile.getFile().getSize() == 0) {
 			errors.rejectValue("file", "", "업로드 할 파일을 선택하세요.");
 		}
 	}

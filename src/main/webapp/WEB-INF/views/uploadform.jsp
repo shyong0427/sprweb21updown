@@ -11,7 +11,7 @@
 	<form:form enctype="multipart/form-data" modelAttribute="uploadfile">
 		업로드 할 파일 선택 : <br>
 		<input type="file" name="file"><br>
-		<form:errors path="multipartFile" cssStyle="color:red"/>
+		<form:errors path="file" cssStyle="color: red"/>
 		<p/>
 		<input type="submit" value="전송">
 		</form:form>
